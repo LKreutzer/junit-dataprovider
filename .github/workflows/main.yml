@@ -1,0 +1,11 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  lte-integ-test:
+    runs-on: macos-10.15
+    steps:
+      - name: test
+        run: timeout 2 sleep 20
+      - name: test2
+        run: time timout sleep 20
